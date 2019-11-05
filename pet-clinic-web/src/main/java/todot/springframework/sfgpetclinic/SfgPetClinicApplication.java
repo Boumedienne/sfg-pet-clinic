@@ -1,4 +1,4 @@
-package tordot.springframework.sfgpetclinic;
+package todot.springframework.sfgpetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

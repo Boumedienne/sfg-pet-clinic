@@ -1,7 +1,5 @@
 package tordot.springframework.sfgpetclinic.model;
 
-import tordot.springframework.sfgpetclinic.model.PetType;
-
 import java.time.LocalDate;
 
 public class Pet {
