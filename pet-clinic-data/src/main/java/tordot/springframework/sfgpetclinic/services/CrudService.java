@@ -2,14 +2,14 @@ package tordot.springframework.sfgpetclinic.services;
 
 import java.util.Set;
 
-public interface CrudService<Owner,ID> {
-    Set<Owner> findAll();
+public interface CrudService<T,ID> {
+    Set<T> findAll();
 
-    Owner findById(ID id);
+    T findById(ID id);
 
-    Owner save(Owner object);
+    Object save(T object);
 
-    void delete(Owner object);
+    void delete(T object);
 
     void deleteById(ID id);
 

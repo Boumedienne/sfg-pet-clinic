@@ -1,10 +1,12 @@
 package tordot.springframework.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import tordot.springframework.sfgpetclinic.model.Pet;
 import tordot.springframework.sfgpetclinic.services.PetService;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
@@ -26,6 +28,8 @@ public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetSe
     public Pet save(Pet object) {
         return super.save(object.getId(),object);
     }
+
+
 
     @Override
     public Pet findById(Long id) {

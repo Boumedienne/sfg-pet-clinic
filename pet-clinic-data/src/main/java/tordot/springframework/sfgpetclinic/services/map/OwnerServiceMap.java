@@ -1,10 +1,12 @@
 package tordot.springframework.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import tordot.springframework.sfgpetclinic.model.Owner;
 import tordot.springframework.sfgpetclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
     @Override
